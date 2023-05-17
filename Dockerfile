@@ -2,6 +2,8 @@ FROM python:3
 
 WORKDIR /data
 
+RUN python3 -m pip install Pillow
+
 RUN pip install django==3.2
 
 COPY . .
